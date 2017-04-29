@@ -1,0 +1,33 @@
+.hundred-percent-width {
+	width: 100%;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.logo {
+	width: 80%;
+}
+
+@media screen and (max-width: 991px) {
+    .logo {
+        width: 20% !important;
+    }
+    .contact-us {
+    	width: 25%;
+    	background-color: #c6c7ca;
+    	float: right;
+    }
+}
+
+.pictures-nav {
+	margin-top: -6em;
+	height: 320px;
+	overflow: auto;
+}
+
+.panel-body.gallery {
+	height: 800px;
+	overflow: auto;
+}
