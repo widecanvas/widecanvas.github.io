@@ -31,3 +31,11 @@ body {
 	height: 800px;
 	overflow: auto;
 }
+
+.menu-dropdown {
+    background-color: transparent;
+    border: none;
+    height: 3em;
+    margin-top: 4px;
+    color: #777;
+}
