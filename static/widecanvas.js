@@ -27,4 +27,21 @@ $(document).ready(function() {
              + "&body=" + escape(emailBody);		             
 		window.location.href = link;            
 	});
+
+	$.get('docs/about-us.html').done(function(response) {
+		$('.about-us-body').append($($.parseHTML(response)));
+	});
+	$.get('docs/projects.html').done(function(response) {		
+		var projects=$($.parseHTML(response));
+		$('.projects-body').append(projects);
+		var allProjects = projects.children();		
+		for (i=0; i<allProjects.length; i++)	{
+			var projectList = $('<li><a href="#project1">Project1</a></li>');
+			projectList.find('a').attr('href', '#project'+(i+1));
+			projectList.find('a').text(
+					allProjects.eq(i).find('.header').text()
+				);
+			$('.projects-dropdown-menu').append(projectList);
+		}
+	});	
 });

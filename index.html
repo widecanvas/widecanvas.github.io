@@ -3,7 +3,7 @@
 
 <head>
     <title>Wide Canvas</title>
-<link href="dist/styles-5532a.min.css" rel="stylesheet"></head>
+<link href="dist/styles-3ad28.min.css" rel="stylesheet"></head>
 
 <body>
     <div id="fb-root"></div>
@@ -18,35 +18,24 @@
     }(document, 'script', 'facebook-jssdk'));
     </script>
     <nav>
-        <div class="sliding_images">
-            <div class="top-propaganda-bar row" style="background: url('https://scontent.fblr1-2.fna.fbcdn.net/v/t31.0-8/p720x720/15995048_1793513947580248_2849432170028766559_o.jpg?oh=d6790d3b9e6afc93aa424108100ad79a&oe=594D75B4'); background-repeat: round;">
-                <div class="col-md-2"><img class="logo" src="https://scontent.fblr1-2.fna.fbcdn.net/v/t1.0-9/16807133_1813193332278976_7150608526091362234_n.jpg?oh=661f633bed936a30ef2e88a418115f0c&oe=598DC516" /></div>
-                <div class="col-md-7"> </div>
-                <div class="col-md-3 contact-us">
-                    <h3>
-    			Contact Us:<br/> 090512-88300 msurabh@gmail.com
-    			</h3>
+        <div class="row" style="background-color: #f1f1f1">
+            <div class="col-md-1">
+                <img class="logo" src='https://scontent.fblr1-2.fna.fbcdn.net/v/t1.0-9/16807133_1813193332278976_7150608526091362234_n.jpg?oh=661f633bed936a30ef2e88a418115f0c&oe=598DC516' >
+            </div>
+            <div class="col-md-9">
+                <div class="sliding_images">
+                    <img style="height: 120px" src="https://scontent.fblr1-2.fna.fbcdn.net/v/t31.0-8/p720x720/15995048_1793513947580248_2849432170028766559_o.jpg?oh=d6790d3b9e6afc93aa424108100ad79a&oe=594D75B4" />
+                    <img style="height: 120px" src="https://scontent.fblr1-1.fna.fbcdn.net/v/t1.0-9/14590395_1748603598737950_6072382040506790013_n.jpg?oh=cc7769fdd6a5070579b9799c20e2cc13&oe=59BC4432">
+                    <img style="height: 120px" src="https://scontent.fblr1-1.fna.fbcdn.net/v/t31.0-8/14480621_1745298055735171_7249065782235349020_o.jpg?oh=608be41d026940624429ed6b9478547c&oe=5981C3EB">
                 </div>
             </div>
-            <div class="top-propaganda-bar row" style="background: url('https://scontent.fblr1-1.fna.fbcdn.net/v/t1.0-9/14590395_1748603598737950_6072382040506790013_n.jpg?oh=cc7769fdd6a5070579b9799c20e2cc13&oe=59BC4432'); background-repeat: round;">
-                <div class="col-md-2"><img class="logo" src="https://scontent.fblr1-2.fna.fbcdn.net/v/t1.0-9/16807133_1813193332278976_7150608526091362234_n.jpg?oh=661f633bed936a30ef2e88a418115f0c&oe=598DC516" /></div>
-                <div class="col-md-7"> </div>
-                <div class="col-md-3 contact-us">
-                    <h3>
+            <div class="col-md-2">
+                <h3>
                 Contact Us:<br/> 090512-88300 msurabh@gmail.com
                 </h3>
-                </div>
-            </div>
-            <div class="top-propaganda-bar row" style="background: url('https://scontent.fblr1-1.fna.fbcdn.net/v/t31.0-8/14480621_1745298055735171_7249065782235349020_o.jpg?oh=608be41d026940624429ed6b9478547c&oe=5981C3EB'); background-repeat: round;">
-                <div class="col-md-2"><img class="logo" src="https://scontent.fblr1-2.fna.fbcdn.net/v/t1.0-9/16807133_1813193332278976_7150608526091362234_n.jpg?oh=661f633bed936a30ef2e88a418115f0c&oe=598DC516" /></div>
-                <div class="col-md-7"> </div>
-                <div class="col-md-3 contact-us">
-                    <h3>
-                Contact Us:<br/> 090512-88300 msurabh@gmail.com
-                </h3>
-                </div>
             </div>
         </div>
+        
         <div class="top-navigation-bar row">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -58,9 +47,7 @@
                               Projects
                               <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#project1">Project1</a></li>
-                              <li><a href="#project2">Project2</a></li>
+                            <ul class="dropdown-menu projects-dropdown-menu">
                             </ul>
                         </div></li>
                         <li><a href="#gallery">Gallery</a></li>
@@ -89,8 +76,8 @@
             <div class="panel-heading">
                 <h3 class="panel-title">About Us</h3>
             </div>
-            <div class="panel-body">
-                Wide Canvas is a Theme Based travel solution provider. CHANGE!! WIDE - Workshops in Different Environment & CANVAS - Provides a background on which event unfolds.
+            <div class="about-us-body panel-body">
+                
             </div>
         </div>
     </div>
@@ -99,12 +86,7 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Projects</h3>
             </div>
-            <div id="project1" class="panel-body">
-                Wide Canvas is a Theme Based travel solution provider. WIDE - Workshops in Different Environment & CANVAS - Provides a background on which event unfolds.
-            </div>
-            <div id="project2" class="panel-body">
-                Wide Canvas is a Theme Based travel solution provider. WIDE - Workshops in Different Environment & CANVAS - Provides a background on which event unfolds.
-            </div>
+            <div class="projects-body"></div>
         </div>
     </div>
     <div id="gallery" class="gallery-section row">
@@ -163,6 +145,6 @@
         <a href="https://www.facebook.com/awidecanvas"><img style="height: 2.5em;" src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAgkAAAAJDU4YmIzY2EzLTE1ZGYtNGI4OS1hMGUxLWU1YWRlNmM0OTcyNw.png"></img></a>
         &#169; Widecanvas 2017
     </center>
-<script type="text/javascript" src="dist/scripts-b06ac.min.js"></script></body>
+<script type="text/javascript" src="dist/scripts-baefb.min.js"></script></body>
 
 </html>
