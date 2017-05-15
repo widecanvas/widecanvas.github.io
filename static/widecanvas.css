@@ -22,7 +22,6 @@ body {
 }
 
 .pictures-nav {
-	margin-top: -6em;
 	height: 320px;
 	overflow: auto;
 }
@@ -38,4 +37,12 @@ body {
     height: 3em;
     margin-top: 4px;
     color: #777;
+}
+
+.sectioned-social-bar > div {
+    margin: auto;
+} 
+
+.js .project-data.js-myexpander-hidden {
+  display: none;
 }

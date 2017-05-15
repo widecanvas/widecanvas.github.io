@@ -43,5 +43,6 @@ $(document).ready(function() {
 				);
 			$('.projects-dropdown-menu').append(projectList);
 		}
+		$('.project-data').expander({slicePoint: 400});
 	});	
 });

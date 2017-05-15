@@ -55,6 +55,11 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        alias : {
+            jquery: __dirname + '/node_modules/jquery/dist/jquery.min.js'
+        }
+    },
     plugins: [
         // Production + Dev
         new CleanWebpackPlugin([outputPath]),
