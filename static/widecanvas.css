@@ -7,7 +7,22 @@ body {
 }
 
 .logo {
-	width: 130%;
+	width: 116.5%;
+    height: 250px;
+}
+
+@media screen and (max-width: 991px) {
+    .logo {
+        height: 100%;
+    }
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.sliding_images > button.slick-arrow {
+    display: none !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -45,4 +60,25 @@ body {
 
 .js .project-data.js-myexpander-hidden {
   display: none;
+}
+
+.slick-dots li button {
+    font-size: 10px;
+    line-height: 6;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+    outline: none;
+    background: #949494;
+    margin: 2px;
+}
+
+.pictures-nav {
+    height: 235px;
+    margin-top: -30px;
 }
