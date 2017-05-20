@@ -82,3 +82,53 @@ body {
     height: 235px;
     margin-top: -30px;
 }
+
+.contact-panel {
+    background-image: url('https://images.pexels.com/photos/297755/pexels-photo-297755.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+}
+
+.contact_left {
+    color: chartreuse;
+}
+
+.projects-body  {
+    background-image: url(https://images.pexels.com/photos/340901/pexels-photo-340901.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+    background-repeat: round;
+    color: aliceblue;
+    font-size: large;
+    background-repeat-y: inherit;
+}
+
+.projects-body .header.label    {
+    font-size: larger;
+    color: aliceblue;
+}
+
+.projects-body .more-link, .projects-body .less-link {
+    color: aqua;
+}
+
+.projects-body .header.label {
+    font-size: larger;
+    color: aliceblue;
+    vertical-align: super;
+    border-radius: 1.25em;
+    background-color: #9a4b81 !important;
+}
+
+.projects-section > .panel, .about-us-section > .panel {
+    margin-bottom: 0;
+}
+
+.about-us-body  {
+    background-image: url(https://static.pexels.com/photos/187919/pexels-photo-187919.jpeg);
+    background-repeat: no-repeat;
+    color: floralwhite;
+    padding-right: 50%;
+    font-weight: bolder;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: large;
+    background-position-x: 0px;
+    text-align: left;
+}
