@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <title>Wide Canvas</title>
     <link href="https://www.fontify.me/wf/ec0f4987a37d8ca5cf90d0bdeb92569d" rel="stylesheet" type="text/css">
@@ -9,7 +10,7 @@
         font-family: font61374 !important;
     }
     </style>
-<link href="dist/styles-d6d13.min.css" rel="stylesheet"></head>
+<link href="dist/styles-a3533.min.css" rel="stylesheet"></head>
 
 <body>
     <div id="fb-root"></div>
@@ -30,19 +31,19 @@
             </div>
             <div class="col-md-10">
                 <div class="sliding_images">
-                    <img style="height: 250px" src="https://scontent.fblr1-2.fna.fbcdn.net/v/t31.0-8/p720x720/15995048_1793513947580248_2849432170028766559_o.jpg?oh=d6790d3b9e6afc93aa424108100ad79a&oe=594D75B4" />
-                    <img style="height: 250px" src="https://scontent.fblr1-1.fna.fbcdn.net/v/t1.0-9/14590395_1748603598737950_6072382040506790013_n.jpg?oh=cc7769fdd6a5070579b9799c20e2cc13&oe=59BC4432">
-                    <img style="height: 250px" src="https://scontent.fblr1-1.fna.fbcdn.net/v/t31.0-8/14480621_1745298055735171_7249065782235349020_o.jpg?oh=608be41d026940624429ed6b9478547c&oe=5981C3EB">
+                    <img style="height: 250px" src="/../images/banner1.jpg" />
+                    <img style="height: 250px" src="/../images/banner2.jpg" />
+                    <img style="height: 250px" src="/../images/banner3.jpg" />
                 </div>
             </div>
         </div>
-        <Marquee>This is a Trial text </Marquee>
+
         <div class="top-navigation-bar row">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <ul class="nav navbar-nav menu-nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about-us">About Us</a></li>                        
+                        <li><a href="#about-us">About Us</a></li>
                         <li><div class="btn-group" role="group">
                             <button type="button" class="btn btn-default dropdown-toggle menu-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Projects
@@ -52,6 +53,8 @@
                             </ul>
                         </div></li>
                         <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#itinerary" data-toggle="modal" data-target="#itinerary">Itinerary</a></li>
+
                         <li><a href="#contact-us">Contact Us</a></li>
                     </ul>
                 </div>
@@ -78,7 +81,7 @@
                 <h3 class="panel-title">About Us</h3>
             </div>
             <div class="about-us-body panel-body">
-                
+
             </div>
         </div>
     </div>
@@ -110,17 +113,17 @@
                     <div class="col-md-4">
                         <div class="contact_left">
                             <h2> Contact Details </h2> Wide Canvas
-                            <br> Lakepally Road, Kamdhari 
+                            <br> Lakepally Road, Kamdhari
                             <br> Near Boral High School
                             <br> P.O.- Boral
                             <br> Kolkata - 700084, W.B. India
                             <br>
                             <br> e-mail: info@widecanvas.co.in
-                            <br> Mobile: +91 833488991 , 
+                            <br> Mobile: +91 833488991 ,
                             <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                  &nbsp;&nbsp;&nbsp;
                                  +91 9051288300
-                        </div>                        
+                        </div>
                     </div>
                     <div class="col-md-8">
                         <iframe
@@ -131,19 +134,56 @@
                         </iframe>
                     </div>
                 </div>
-                
-            </div>
+                <div id="itinerary" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Itineraries</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="itineraries" id="itinerary_pages" ></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="toc" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Itineraries</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="toc" id="toc_page" ></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+         </div>
         </div>
     </div>
     <div class="row" style="margin: 10px;">
-        <div style="float:left">        
+        <div style="float:left">
         Copyright &#169; Wide Canvas 2017. All Rights Reserved. Privacy Policy.
         </div>
+        <a href="#toc"  data-toggle="modal" data-target="#toc">Terms and Conditions</a>
         <div style="float: right">
         <a href="https://www.facebook.com/awidecanvas"><img style="height: 2.5em;" src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAgkAAAAJDU4YmIzY2EzLTE1ZGYtNGI4OS1hMGUxLWU1YWRlNmM0OTcyNw.png"></img></a>
         <a href="https://www.youtube.com/results?search_query=widecanvas"><img style="height: 2.5em;" src="http://is4.mzstatic.com/image/thumb/Purple91/v4/19/25/2c/19252c9a-3d9b-049f-9aa3-da954c4c115c/source/175x175bb.jpg"></img></a>
         </div>
     </div>
-<script type="text/javascript" src="dist/scripts-35f2a.min.js"></script></body>
+<script type="text/javascript" src="dist/scripts-e74b8.min.js"></script></body>
 
 </html>

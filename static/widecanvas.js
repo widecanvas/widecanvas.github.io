@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(".sectioned-social-bar > .row").on('onmouseenter', function() {
 		$(this).addClass('hundred-perc-width');
 	});
-	
+
 	$(".sectioned-social-bar > .row").on('onmouseleave', function() {
 		$(this).removeClass('hundred-perc-width');
 	});
@@ -24,17 +24,17 @@ $(document).ready(function() {
 			emailBody = $('.emailBody').val();
 		var link = "mailto:msurabh@gmail.com"
              + "?subject=" + escape("Widecanvas Contact Form")
-             + "&body=" + escape(emailBody);		             
-		window.location.href = link;            
+             + "&body=" + escape(emailBody);
+		window.location.href = link;
 	});
 
 	$.get('docs/about-us.html').done(function(response) {
 		$('.about-us-body').append($($.parseHTML(response)));
 	});
-	$.get('docs/projects.html').done(function(response) {		
+	$.get('docs/projects.html').done(function(response) {
 		var projects=$($.parseHTML(response));
 		$('.projects-body').append(projects);
-		var allProjects = projects.children();		
+		var allProjects = projects.children();
 		for (i=0; i<allProjects.length; i++)	{
 			var projectList = $('<li><a href="#project1">Project1</a></li>');
 			projectList.find('a').attr('href', '#project'+(i+1));
@@ -44,5 +44,11 @@ $(document).ready(function() {
 			$('.projects-dropdown-menu').append(projectList);
 		}
 		$('.project-data').expander({slicePoint: 400});
-	});	
+	});
+	$.get('docs/itineraries.html').done(function(response) {
+		$('.itineraries').append($($.parseHTML(response)));
+	});
+	$.get('docs/toc.html').done(function(response) {
+		$('.toc').append($($.parseHTML(response)));
+	});
 });

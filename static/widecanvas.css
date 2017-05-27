@@ -56,7 +56,7 @@ body {
 
 .sectioned-social-bar > div {
     margin: auto;
-} 
+}
 
 .js .project-data.js-myexpander-hidden {
   display: none;
@@ -84,15 +84,23 @@ body {
 }
 
 .contact-panel {
-    background-image: url('https://images.pexels.com/photos/297755/pexels-photo-297755.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+    background-image: url('/../images/contact-us.jpg');
+    background-repeat: round;
+    background-repeat: space;
+    background-position-x: -27em;
+    background-size: cover;
 }
 
 .contact_left {
     color: chartreuse;
+    float: right;
+    margin-top: 8em;
+    margin-right: -2em;
+    font-weight: bolder;
 }
 
 .projects-body  {
-    background-image: url(https://images.pexels.com/photos/340901/pexels-photo-340901.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+    background-image: url('/../images/projects.jpg');
     background-repeat: round;
     color: aliceblue;
     font-size: large;
@@ -121,8 +129,8 @@ body {
 }
 
 .about-us-body  {
-    background-image: url(https://static.pexels.com/photos/187919/pexels-photo-187919.jpeg);
-    background-repeat: no-repeat;
+    background-image: url('/../images/about-us.jpg');
+    background-repeat: round;
     color: floralwhite;
     padding-right: 50%;
     font-weight: bolder;
@@ -131,4 +139,23 @@ body {
     font-size: large;
     background-position-x: 0px;
     text-align: left;
+}
+
+.row.itineraries div {
+    border: 2px solid aliceblue;
+    height: 3em;
+    margin-top: 1px;
+}
+
+#toc .modal-content {
+    width: 600px;
+}
+
+#toc .modal-content, modal-dialog {
+    height: 600px;
+}
+
+#toc .modal-body {
+    max-height: 600px;
+    overflow-y: scroll;
 }
