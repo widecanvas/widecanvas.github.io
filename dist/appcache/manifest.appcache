@@ -1,13 +1,19 @@
 CACHE MANIFEST
-#ver:5/28/2017, 4:42:46 PM
+#ver:5/28/2017, 5:13:22 PM
 #plugin:4.8.1
 
 CACHE:
 /images/ajax-loader.c5cd7.gif
-./dist/scripts-7ff1d.min.js
+./dist/scripts-94004.min.js
 ./dist/styles-a8913.min.css
 ./dist/../
-./dist/docs/about-us.html
+./dist/../images/banner1.jpg
+./dist/../images/banner2.jpg
+./dist/../images/banner3.jpg
+./dist/../images/social.jpg
+./dist/../images/about-us.jpg
+./dist/../images/projects.jpg
+./dist/../images/contact-us.jpg
 
 NETWORK:
 *

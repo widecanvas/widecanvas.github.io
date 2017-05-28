@@ -86,10 +86,18 @@ module.exports = {
         new OfflinePlugin({
             publicPath: './dist/',
             ServiceWorker: {
-                output: './sw.js'
+                output: '../sw.js'
             },
             externals: [
-                './docs/about-us.html'
+                '../images/banner1.jpg',
+                '../images/banner2.jpg',
+                '../images/banner3.jpg',
+
+                '../images/social.jpg',
+
+                '../images/about-us.jpg',
+                '../images/projects.jpg',
+                '../images/contact-us.jpg'
             ]
         })
     ]

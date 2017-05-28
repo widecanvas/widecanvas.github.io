@@ -2,26 +2,38 @@ var __wpo = {
   "assets": {
     "main": [
       "/images/ajax-loader.c5cd7.gif",
-      "./dist/scripts-7ff1d.min.js",
+      "./dist/scripts-94004.min.js",
       "./dist/styles-a8913.min.css",
       "./dist/../",
-      "./dist/docs/about-us.html"
+      "./dist/../images/banner1.jpg",
+      "./dist/../images/banner2.jpg",
+      "./dist/../images/banner3.jpg",
+      "./dist/../images/social.jpg",
+      "./dist/../images/about-us.jpg",
+      "./dist/../images/projects.jpg",
+      "./dist/../images/contact-us.jpg"
     ],
     "additional": [],
     "optional": []
   },
   "externals": [
-    "./dist/docs/about-us.html"
+    "./dist/../images/banner1.jpg",
+    "./dist/../images/banner2.jpg",
+    "./dist/../images/banner3.jpg",
+    "./dist/../images/social.jpg",
+    "./dist/../images/about-us.jpg",
+    "./dist/../images/projects.jpg",
+    "./dist/../images/contact-us.jpg"
   ],
   "hashesMap": {
     "7a1aa43614396382bb15e5fde574d9cdcd21698f": "/images/ajax-loader.c5cd7.gif",
-    "975bdb8772e5ef501e5cdc7397a59b70377f8436": "./dist/scripts-7ff1d.min.js",
+    "ad2b74668af1600d9f2dfc49f71668e2f9f553ac": "./dist/scripts-94004.min.js",
     "777d71daa80bf2304a4db75a4d4901a74db639b2": "./dist/styles-a8913.min.css",
-    "858576d5053b8690b30d1dd437eb03bd38e8723f": "./dist/../"
+    "9328962d613d8964f04043b684e2a2848e0f8b14": "./dist/../"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "5/28/2017, 4:42:46 PM",
+  "version": "5/28/2017, 5:13:22 PM",
   "name": "webpack-offline",
   "pluginVersion": "4.8.1",
   "relativePaths": false
