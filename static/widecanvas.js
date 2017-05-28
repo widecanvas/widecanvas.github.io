@@ -51,4 +51,12 @@ $(document).ready(function() {
 	$.get('docs/toc.html').done(function(response) {
 		$('.toc').append($($.parseHTML(response)));
 	});
+	$.get('docs/marquee.html').done(function(response) {
+		$('.marquee_code').append($($.parseHTML(response)));
+	});
+
+	$('#map').on('load', function() {
+		$('[for="map"]').hide();
+		$(this).show();
+	});
 });

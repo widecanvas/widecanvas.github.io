@@ -85,17 +85,15 @@ body {
 
 .contact-panel {
     background-image: url('/../images/contact-us.jpg');
-    background-repeat: round;
-    background-repeat: space;
-    background-position-x: -27em;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .contact_left {
     color: chartreuse;
-    float: right;
-    margin-top: 8em;
-    margin-right: -2em;
+    background-color: #585a57;
+    width: 17em;
+    opacity: 0.7;
     font-weight: bolder;
 }
 
@@ -124,9 +122,7 @@ body {
     background-color: #9a4b81 !important;
 }
 
-.projects-section > .panel, .about-us-section > .panel {
-    margin-bottom: 0;
-}
+
 
 .about-us-body  {
     background-image: url('/../images/about-us.jpg');
@@ -147,15 +143,29 @@ body {
     margin-top: 1px;
 }
 
-#toc .modal-content {
-    width: 600px;
-}
-
-#toc .modal-content, modal-dialog {
-    height: 600px;
-}
-
-#toc .modal-body {
-    max-height: 600px;
+#toc_page   {
+    height: 12em;
     overflow-y: scroll;
+}
+
+#map {
+    display: none;
+}
+
+.dev {
+    width: 23em;
+    padding: 2px;
+    margin: 0;
+}
+
+.marquee_code
+{
+    background-color:3B27C2;
+    font-family:monotype corsiva;
+    font-size:18pt;
+    color:E6FF42;
+    border-width:4px;
+    border-style:outset;
+    border-color:DE3116;
+    font-style:italic;font-weight:bold;
 }
