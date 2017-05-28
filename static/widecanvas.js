@@ -54,6 +54,9 @@ $(document).ready(function() {
 	$.get('docs/marquee.html').done(function(response) {
 		$('.marquee_code').append($($.parseHTML(response)));
 	});
+	$.get('docs/testimonials.html').done(function(response) {
+		$('.testimonials-container').append($($.parseHTML(response)));
+	});
 
 	$('#map').on('load', function() {
 		$('[for="map"]').hide();

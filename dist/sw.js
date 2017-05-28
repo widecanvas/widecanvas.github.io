@@ -1,16 +1,9 @@
 var __wpo = {
   "assets": {
     "main": [
-      "/fonts/slick.ced61.eot",
-      "/fonts/slick.d41f5.ttf",
-      "/fonts/slick.b7c9e.woff",
       "/images/ajax-loader.c5cd7.gif",
-      "/fonts/glyphicons-halflings-regular.f4769.eot",
-      "/fonts/glyphicons-halflings-regular.e18bb.ttf",
-      "/fonts/glyphicons-halflings-regular.fa277.woff",
-      "/fonts/glyphicons-halflings-regular.448c3.woff2",
-      "./dist/scripts-cdbbd.min.js",
-      "./dist/styles-cc3a9.min.css",
+      "./dist/scripts-7ff1d.min.js",
+      "./dist/styles-a8913.min.css",
       "./dist/../",
       "./dist/docs/about-us.html"
     ],
@@ -21,21 +14,14 @@ var __wpo = {
     "./dist/docs/about-us.html"
   ],
   "hashesMap": {
-    "2dff0768f4c0a53228761eab917e2c65556042d4": "/fonts/slick.ced61.eot",
-    "3331eebdd4ba348ef25abe00c39ffbe867d46575": "/fonts/slick.d41f5.ttf",
-    "af91c12f0f406a4f801aeb3b398768fe41d8f864": "/fonts/slick.b7c9e.woff",
     "7a1aa43614396382bb15e5fde574d9cdcd21698f": "/images/ajax-loader.c5cd7.gif",
-    "86b6f62b7853e67d3e635f6512a5a5efc58ea3c3": "/fonts/glyphicons-halflings-regular.f4769.eot",
-    "44bc1850f570972267b169ae18f1cb06b611ffa2": "/fonts/glyphicons-halflings-regular.e18bb.ttf",
-    "278e49a86e634da6f2a02f3b47dd9d2a8f26210f": "/fonts/glyphicons-halflings-regular.fa277.woff",
-    "ca35b697d99cae4d1b60f2d60fcd37771987eb07": "/fonts/glyphicons-halflings-regular.448c3.woff2",
-    "aef5de28315d93c2c9fbe37a8125c6cc556a4799": "./dist/scripts-cdbbd.min.js",
-    "1f173f79fe488d8175367365a0edaaf31bda39d0": "./dist/styles-cc3a9.min.css",
-    "e3d82f2c33ae8b66b5181b635043fd1b3add0597": "./dist/../"
+    "975bdb8772e5ef501e5cdc7397a59b70377f8436": "./dist/scripts-7ff1d.min.js",
+    "777d71daa80bf2304a4db75a4d4901a74db639b2": "./dist/styles-a8913.min.css",
+    "858576d5053b8690b30d1dd437eb03bd38e8723f": "./dist/../"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "5/28/2017, 3:31:12 PM",
+  "version": "5/28/2017, 4:42:46 PM",
   "name": "webpack-offline",
   "pluginVersion": "4.8.1",
   "relativePaths": false

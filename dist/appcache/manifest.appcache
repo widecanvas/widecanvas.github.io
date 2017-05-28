@@ -1,18 +1,11 @@
 CACHE MANIFEST
-#ver:5/28/2017, 3:31:12 PM
+#ver:5/28/2017, 4:42:46 PM
 #plugin:4.8.1
 
 CACHE:
-/fonts/slick.ced61.eot
-/fonts/slick.d41f5.ttf
-/fonts/slick.b7c9e.woff
 /images/ajax-loader.c5cd7.gif
-/fonts/glyphicons-halflings-regular.f4769.eot
-/fonts/glyphicons-halflings-regular.e18bb.ttf
-/fonts/glyphicons-halflings-regular.fa277.woff
-/fonts/glyphicons-halflings-regular.448c3.woff2
-./dist/scripts-cdbbd.min.js
-./dist/styles-cc3a9.min.css
+./dist/scripts-7ff1d.min.js
+./dist/styles-a8913.min.css
 ./dist/../
 ./dist/docs/about-us.html
 

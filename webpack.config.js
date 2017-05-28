@@ -37,8 +37,8 @@ module.exports = {
                 })
             },
             {
-                test: /\.(woff|woff2|eot|ttf)$/,
-                loader: 'file-loader?limit=0&name=/fonts/[name].[hash:5].[ext]'
+                test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/,
+                loader: 'url-loader'
             },
             {
                 test: /(\.json|favicon\.png)/,
