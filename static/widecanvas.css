@@ -44,6 +44,7 @@ body {
 .panel-body.gallery {
 	height: 800px;
 	overflow: auto;
+    background-color: #c6e1f9;
 }
 
 .menu-dropdown {
@@ -51,7 +52,7 @@ body {
     border: none;
     height: 3em;
     margin-top: 4px;
-    color: #777;
+    color: #ffffff;
 }
 
 .sectioned-social-bar > div {
@@ -160,12 +161,47 @@ body {
 
 .marquee_code
 {
-    background-color:3B27C2;
+    background-color: #3B27C2;
     font-family:monotype corsiva;
     font-size:18pt;
-    color:E6FF42;
+    color: #E6FF42;
     border-width:4px;
     border-style:outset;
-    border-color:DE3116;
-    font-style:italic;font-weight:bold;
+    border-color: #DE3116;
+    font-style:italic;
+    font-weight:bold;
+}
+
+#toc div {
+    font-size: 116%;
+}
+
+.call_me {
+    color: chartreuse;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    background-color: gray;
+    opacity: 0.8;
+    font-size: 110%;
+    font-weight: bolder;
+    border-radius: 20px;
+    right: 10px;
+    z-index: 200;
+}
+
+.sectioned-social-bar   {
+    background-color: black;
+    background-image: url('/../images/social.jpg');
+    background-repeat: round;
+}
+
+.top-navigation-bar {
+    margin-bottom: -40px;
+}
+
+.panel-default > .panel-heading {
+    color: #ffffff;
+    background-color: #0275d8;
+    border-color: #ddd;
 }

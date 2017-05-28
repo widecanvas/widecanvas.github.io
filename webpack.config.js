@@ -83,11 +83,15 @@ module.exports = {
         //     test: /\.js$|\.html$/,
         //     minRatio: 0.8
         // }),
-        // new OfflinePlugin({
-        //     ServiceWorker: {
-        //         output: './sw.js'
-        //     },
-        // })
+        new OfflinePlugin({
+            publicPath: './dist/',
+            ServiceWorker: {
+                output: './sw.js'
+            },
+            externals: [
+                './docs/about-us.html'
+            ]
+        })
     ]
 };
 

@@ -24,8 +24,8 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
-    <nav>
-        <div class="row" style="background-color: #f1f1f1">
+    <nav class="navbar">
+        <div class="row" style="background-color: aliceblue">
             <div class="col-md-2">
                 <img class="logo" src='https://scontent.fblr1-2.fna.fbcdn.net/v/t1.0-9/16807133_1813193332278976_7150608526091362234_n.jpg?oh=661f633bed936a30ef2e88a418115f0c&oe=598DC516' >
             </div>
@@ -36,6 +36,11 @@
                     <img style="height: 250px" src="/../images/banner3.jpg" />
                 </div>
             </div>
+            <div class="call_me well well-sm">
+                Call Now<br />
+                +91 833488991<br />
+                +91 9051288300<br />
+            </div>
         </div>
 
         <div class="top-navigation-bar row">
@@ -44,14 +49,11 @@
                     <ul class="nav navbar-nav menu-nav">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#about-us">About Us</a></li>
-                        <li><div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default dropdown-toggle menu-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Projects
-                              <span class="caret"></span>
-                            </button>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Projects <b class="caret"></b></a>
                             <ul class="dropdown-menu projects-dropdown-menu">
                             </ul>
-                        </div></li>
+                        </li>
                         <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#itinerary" data-toggle="modal" data-target="#itinerary">Itinerary</a></li>
 
@@ -151,6 +153,7 @@
                             <div class="itineraries" id="itinerary_pages" ></div>
                           </div>
                           <div class="modal-footer">
+                            <a href="#toc" style="float: left"  data-toggle="modal" data-target="#toc">Terms and Conditions</a>                          
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           </div>
                         </div>
@@ -163,7 +166,7 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Itineraries</h4>
+                            <h4 class="modal-title">Terms and Conditions</h4>
                           </div>
                           <div class="modal-body">
                             <div class="toc" id="toc_page" ></div>
