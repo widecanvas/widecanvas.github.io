@@ -48,9 +48,11 @@ $(document).ready(function() {
 	$.get('docs/itineraries.html').done(function(response) {
 		$('.itineraries').append($($.parseHTML(response)));
 	});
-	$.get('docs/toc.html').done(function(response) {
-		$('.toc').append($($.parseHTML(response)));
+
+	$(document).delegate('[data-target="#toc"]', 'click', function() {
+		$('#toc_page').attr('src', 'docs/toc.html');
 	});
+
 	$.get('docs/marquee.html').done(function(response) {
 		$('.marquee_code').append($($.parseHTML(response)));
 	});
@@ -61,5 +63,16 @@ $(document).ready(function() {
 	$('#map').on('load', function() {
 		$('[for="map"]').hide();
 		$(this).show();
+	});
+
+	$(document).delegate('[data-target="#initerary_detail"]', 'click', function() {
+		var itinerary_detail = $(this).attr('data-itinerary');
+		$('.itinerary-header').text(itinerary_detail);
+		$('#initerary_detail_page').next('img').show();
+		setTimeout(function() {
+			$('.download_itinerary').attr('href', 'docs/'+itinerary_detail+'.docx');
+			$('#initerary_detail_page').attr('src', 'docs/'+itinerary_detail+'.html');
+			$('#initerary_detail_page').next('img').hide();
+		}, 500);		
 	});
 });

@@ -138,14 +138,8 @@ body {
     text-align: left;
 }
 
-.row.itineraries div {
-    border: 2px solid aliceblue;
-    height: 3em;
-    margin-top: 1px;
-}
-
-#toc_page   {
-    height: 12em;
+#toc_page, #initerary_detail_page   {
+    height: 16em;
     overflow-y: scroll;
 }
 
@@ -204,4 +198,21 @@ body {
     color: #ffffff;
     background-color: #0275d8;
     border-color: #ddd;
+}
+
+.itinerary_dtl_loding {
+    margin-left: 45%;
+}
+
+.download_itinerary {
+    float: left;
+}
+
+.itinerary_dtl_link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.testimonials_panel {
+    background-color: #c6e1f9;
 }

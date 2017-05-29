@@ -2,6 +2,7 @@ require('./node_modules/bootstrap/dist/css/bootstrap.css');
 require('./static/menu.css');
 require('./node_modules/slick-carousel/slick/slick.css');
 require('./node_modules/slick-carousel/slick/slick-theme.css');
+require('./static/modal.css');
 require('./static/testimonials.css');
 require('./static/widecanvas.css');
 

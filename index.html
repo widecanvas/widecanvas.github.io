@@ -10,7 +10,7 @@
         font-family: font61374 !important;
     }    
     </style>
-<link href="dist/styles-a8913.min.css" rel="stylesheet"></head>
+<link href="dist/styles-49d40.min.css" rel="stylesheet"></head>
 
 <body>
     <div id="fb-root"></div>
@@ -55,7 +55,7 @@
                             </ul>
                         </li>
                         <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#itinerary" data-toggle="modal" data-target="#itinerary">Itinerary</a></li>
+                        <li><a href="#itinerary" data-toggle="modal" data-target="#itinerary">Itineraries</a></li>
 
                         <li><a href="#contact-us">Contact Us</a></li>
                     </ul>
@@ -66,7 +66,7 @@
     <marquee class="marquee_code" direction="left" behavior="scroll" scrollamount="10" ></marquee>
     <div class="sectioned-social-bar row">
         <div class="facebook-nav col-md-4">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F1841150112816631%3A0&width=500" width="100%" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F1841150112816631%3A0&width=500"  width="100%" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
         <div class="blog-nav col-md-4">
             <iframe src="https://feed.mikle.com/widget/v2/30080/" width="105%" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
@@ -74,11 +74,13 @@
         <div class="youtube-nav col-md-4">
             <iframe src="https://www.youtube.com/embed/hXdMvVX3ZL4" width="100%" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         </div>
-        <div class="testimonials-nav col-md-12">
+
+        <div class="testimonials-nav col-md-12">            
             <div class="container testimonials">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-primary">
+                <div class="row">                    
+                    <div class="col-md-12">                        
+                        <div class="panel panel-info testimonials_panel">
+                            <center><h3>TESTIMONIALS </h3></center>
                             <div class="panel-body testimonials-container">
                             </div>
                         </div>
@@ -149,38 +151,66 @@
                         </div>
                     </div>
                 </div>
-                <div id="itinerary" class="modal fade" role="dialog">
+                <div id="itinerary" data-modal-color="blue" class="modal fade" role="dialog">
                     <div class="modal-dialog">
 
                         <!-- Modal content-->
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Itineraries</h4>
+                            <h3 class="modal-title">Itineraries</h3>
                           </div>
                           <div class="modal-body">
                             <div class="itineraries" id="itinerary_pages" ></div>
                           </div>
                           <div class="modal-footer">
-                            <a href="#toc" style="float: left"  data-toggle="modal" data-target="#toc">Terms and Conditions</a>                          
+                            <a class="btn btn-default" href="#toc" style="float: left"  data-toggle="modal" data-target="#toc">Terms and Conditions</a>                          
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           </div>
                         </div>
                     </div>
                 </div>
-                <div id="toc" class="modal fade" role="dialog">
+                <div id="toc" data-modal-color="blue" class="modal fade" role="dialog">
                     <div class="modal-dialog">
 
                         <!-- Modal content-->
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Terms and Conditions</h4>
+                            <h3 class="modal-title">Terms and Conditions</h3>
                           </div>
                           <div class="modal-body">
-                            <div class="toc" id="toc_page" ></div>
+                            <iframe class="toc" id="toc_page" src=""
+                            width="100%" style="border:none;overflow:hidden" frameborder="0" allowTransparency="true">
+                            </iframe>
                           </div>
                           <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="initerary_detail" data-modal-color="blue" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title itinerary-header"></h3>
+                          </div>
+                          <div class="modal-body">
+                            <iframe class="initerary_detail" id="initerary_detail_page" 
+                            src="" width="100%" style="border:none;overflow:hidden" frameborder="0" allowTransparency="true">
+                            </iframe>
+                            <img class="itinerary_dtl_loding" src="/../images/ajax-loader.c5cd7.gif" />
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" class="btn btn-default download_itinerary">
+                            <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+                            Download
+                            </a> 
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                           </div>
                         </div>
@@ -206,6 +236,6 @@
     </div>
     </center>
     <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
-<script type="text/javascript" src="dist/scripts-94004.min.js"></script></body>
+<script type="text/javascript" src="dist/scripts-9bc5a.min.js"></script></body>
 
 </html>
