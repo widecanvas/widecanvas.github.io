@@ -2,8 +2,8 @@ var __wpo = {
   "assets": {
     "main": [
       "/images/ajax-loader.c5cd7.gif",
-      "./dist/scripts-9bc5a.min.js",
-      "./dist/styles-49d40.min.css",
+      "./dist/scripts-7fe5b.min.js",
+      "./dist/styles-d0072.min.css",
       "./dist/../",
       "./dist/../images/banner1.jpg",
       "./dist/../images/banner2.jpg",
@@ -27,13 +27,13 @@ var __wpo = {
   ],
   "hashesMap": {
     "7a1aa43614396382bb15e5fde574d9cdcd21698f": "/images/ajax-loader.c5cd7.gif",
-    "25c6478b0d118037f7da59205c03a8ec9e703691": "./dist/scripts-9bc5a.min.js",
-    "3bc46828345e1646ed3b10e10b3bf4f2e61ceb9c": "./dist/styles-49d40.min.css",
-    "56dac34c5181854f431d58a550d32e7b2c521d05": "./dist/../"
+    "25c6478b0d118037f7da59205c03a8ec9e703691": "./dist/scripts-7fe5b.min.js",
+    "2659e31a20f49bf60844f1fad89bf9abacf8bd66": "./dist/styles-d0072.min.css",
+    "63eff809a59934a0b3b43414c4dea7ed825c6676": "./dist/../"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "5/30/2017, 1:00:55 AM",
+  "version": "6/3/2017, 4:47:33 PM",
   "name": "webpack-offline",
   "pluginVersion": "4.8.1",
   "relativePaths": false

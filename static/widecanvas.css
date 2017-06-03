@@ -1,3 +1,15 @@
+@font-face {
+        font-family:"font61374";
+        font-family:"font61374";
+        src:url("/../static/verdana_1.woff") format("woff");
+        font-weight:normal;
+        font-style:normal;
+}
+
+body{
+    font-family: font61374 !important;
+}
+
 .hundred-percent-width {
 	width: 100%;
 }
@@ -33,6 +45,19 @@ body {
     	width: 25%;
     	background-color: #c6c7ca;
     	float: right;
+    }
+}
+
+@media screen and (min-width: 687px)    {
+    .side-panel {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .side-panel-no-left {
+        padding-left: 0;
+    }
+    .side-panel-no-right {
+        padding-right: 0;
     }
 }
 
@@ -96,6 +121,10 @@ body {
     width: 17em;
     opacity: 0.7;
     font-weight: bolder;
+}
+
+.contact_left.full_width {
+    width: 22em;
 }
 
 .projects-body  {
