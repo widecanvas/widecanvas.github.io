@@ -75,4 +75,11 @@ $(document).ready(function() {
 			$('#initerary_detail_page').next('img').hide();
 		}, 500);		
 	});
+
+	$.get('https://graph.facebook.com/awidecanvas/promotable_posts?access_token=EAACEdEose0cBAD0WfyzYc6t9dnvooZAAXJN9HjNwN3k8pAHl9OEaYbCcm5CFbUlWgrjYguPKuELSghm7AI605hV5nPfvySzOwVTLJrPoxROifZBqec8gqK7mTUDwMwYBNTZAnzTv0efZAT9aHcvey1vjvlwBbAXFWWfOZCumDnnoZBZA2ecXX49YCVfH3EyFqEZD').done(function(response) {
+		var firstPost = response.data[0].object_id;
+		var postUrl = "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F{postId}%3A0&width=482".replace("{postId}", firstPost);
+		$('#facebookPost').attr('src', postUrl);
+		$('#facebookPostLoading').hide();
+	});
 });

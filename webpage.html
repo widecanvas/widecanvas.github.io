@@ -61,7 +61,10 @@
     <marquee class="marquee_code" direction="left" behavior="scroll" scrollamount="10" ></marquee>
     <div class="sectioned-social-bar row">
         <div class="facebook-nav col-md-4">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F1841150112816631%3A0&width=500"  width="100%" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <div id="facebookPostLoading">
+                <img src="/../images/ajax-loader.c5cd7.gif" style="margin-top: 4em; margin-left: 40%;">
+            </div>
+            <iframe id="facebookPost" src=""  width="100%" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
         <div class="blog-nav col-md-4">
             <iframe src="https://feed.mikle.com/widget/v2/30080/" width="105%" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
@@ -137,7 +140,7 @@
                     </div>
                     <div class="col-md-9">
                         <iframe id="map"
-                          width="750"
+                          width="100%"
                           height="278"
                           frameborder="0" style="border:0"
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.3915508495757!2d88.37385021441693!3d22.451915785245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0271bbc223fedd%3A0x68972cee16cfeb69!2sWide+Canvas!5e0!3m2!1sen!2sin!4v1495788825731" allowfullscreen>
