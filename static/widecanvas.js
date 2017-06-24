@@ -76,9 +76,9 @@ $(document).ready(function() {
 		}, 500);		
 	});
 
-	$.get('https://graph.facebook.com/awidecanvas/promotable_posts?access_token=EAACEdEose0cBAD0WfyzYc6t9dnvooZAAXJN9HjNwN3k8pAHl9OEaYbCcm5CFbUlWgrjYguPKuELSghm7AI605hV5nPfvySzOwVTLJrPoxROifZBqec8gqK7mTUDwMwYBNTZAnzTv0efZAT9aHcvey1vjvlwBbAXFWWfOZCumDnnoZBZA2ecXX49YCVfH3EyFqEZD').done(function(response) {
+	$.get('https://graph.facebook.com/awidecanvas/promotable_posts?access_token=EAACEdEose0cBAOKmzo5kT8O9KMCwzRqfa603puZBImx7O2yGBZAKQuOb7Ruoxy72os2XF8FuogGpZCIBqMX9mtuDRmgvRC65HZBM7PppGuFIbxQ7GRjHtQOgJwIla1ghKslvdjbE4If27MJtV1Is39HajnpWtrA7TeiKO9ZB5RSWrf5EsnoCbXrPNcopOwWsZD').done(function(response) {
 		var firstPost = response.data[0].object_id;
-		var postUrl = "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F{postId}%3A0&width=482".replace("{postId}", firstPost);
+		var postUrl = "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F{postId}%3A0&width=316".replace("{postId}", firstPost);
 		$('#facebookPost').attr('src', postUrl);
 		$('#facebookPostLoading').hide();
 	});
