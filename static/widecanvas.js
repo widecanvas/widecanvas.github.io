@@ -77,8 +77,8 @@ $(document).ready(function() {
 	});
 
 	$.get('https://graph.facebook.com/awidecanvas/promotable_posts?access_token=EAACEdEose0cBAGth9hBLrlekyOJsONPcQZAk8zvNeNmjBJQodZCTxsGImoxr1lEgZA4R8FyrD8Co0LhDLBISfKoPIk3p2ZBaODLckpCkQtpCAEg1W0morHxV6MyPlmEgsr3WIZC0nsVKDkNFnRGZB4tM7RVdss5jpSaPh5ZARmzd3EhpBnqppxRyrcBe1UbTub5IZC9iCtABMRCkTbjcMjOx').done(function(response) {
-		var firstPost = response.data[0].object_id;
-		var postUrl = "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F{postId}%3A0&width=316".replace("{postId}", firstPost);
+		var firstPost = response.data[0].id.split('_')[1];
+		var postUrl = "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F{postId}&width=316".replace("{postId}", firstPost);
 		$('#facebookPost').attr('src', postUrl);
 		$('#facebookPostLoading').hide();
 	});
