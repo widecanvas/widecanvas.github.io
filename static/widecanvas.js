@@ -76,12 +76,30 @@ $(document).ready(function() {
 		}, 500);		
 	});
 
-	$.get('https://graph.facebook.com/awidecanvas/promotable_posts?access_token=EAACEdEose0cBAGth9hBLrlekyOJsONPcQZAk8zvNeNmjBJQodZCTxsGImoxr1lEgZA4R8FyrD8Co0LhDLBISfKoPIk3p2ZBaODLckpCkQtpCAEg1W0morHxV6MyPlmEgsr3WIZC0nsVKDkNFnRGZB4tM7RVdss5jpSaPh5ZARmzd3EhpBnqppxRyrcBe1UbTub5IZC9iCtABMRCkTbjcMjOx').done(function(response) {
-		var firstPost = response.data[0].id.split('_')[1];
-		var postUrl = "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F{postId}&width=316".replace("{postId}", firstPost);
-		$('#facebookPost').attr('src', postUrl);
-		$('#facebookPostLoading').hide();
-	});
+	var showPosts = function(tk) {
+		$.get(
+			'https://graph.facebook.com/v2.12/awidecanvas/feed?access_token={access_token}'.replace(
+				'{access_token}',
+				tk
+				)
+			).done(function(response) {
+			var firstPost = response.data[0].id.split('_')[1];
+			var postUrl = "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F{postId}&width=316".replace("{postId}", firstPost);
+			$('#facebookPost').attr('src', postUrl);
+			$('#facebookPostLoading').hide();
+		});
+	};
+
+	$.get('https://graph.facebook.com/oauth/access_token?client_id=404769543315022&client_secret=ee0dd6b38081f9be4493bd7bed07d5e2&grant_type=client_credentials').done(
+		function(response) {
+			var tk = response.access_token;
+			showPosts(tk);
+			$('#site_logo').attr(
+				'src',
+				'https://graph.facebook.com/v2.12/awidecanvas/picture?height=220&amp;access_token=' + tk
+				);
+		}
+	);	
 
 	window.fbAsyncInit = function() {
 		FB.init({
