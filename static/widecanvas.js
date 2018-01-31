@@ -76,10 +76,28 @@ $(document).ready(function() {
 		}, 500);		
 	});
 
-	$.get('https://graph.facebook.com/awidecanvas/promotable_posts?access_token=EAACEdEose0cBAOKmzo5kT8O9KMCwzRqfa603puZBImx7O2yGBZAKQuOb7Ruoxy72os2XF8FuogGpZCIBqMX9mtuDRmgvRC65HZBM7PppGuFIbxQ7GRjHtQOgJwIla1ghKslvdjbE4If27MJtV1Is39HajnpWtrA7TeiKO9ZB5RSWrf5EsnoCbXrPNcopOwWsZD').done(function(response) {
+	$.get('https://graph.facebook.com/awidecanvas/promotable_posts?access_token=https://graph.facebook.com/awidecanvas/promotable_posts?access_token=EAACEdEose0cBAGth9hBLrlekyOJsONPcQZAk8zvNeNmjBJQodZCTxsGImoxr1lEgZA4R8FyrD8Co0LhDLBISfKoPIk3p2ZBaODLckpCkQtpCAEg1W0morHxV6MyPlmEgsr3WIZC0nsVKDkNFnRGZB4tM7RVdss5jpSaPh5ZARmzd3EhpBnqppxRyrcBe1UbTub5IZC9iCtABMRCkTbjcMjOx').done(function(response) {
 		var firstPost = response.data[0].object_id;
 		var postUrl = "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawidecanvas%2Fposts%2F{postId}%3A0&width=316".replace("{postId}", firstPost);
 		$('#facebookPost').attr('src', postUrl);
 		$('#facebookPostLoading').hide();
 	});
+
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : '791998864301598',
+			xfbml      : true,
+			version    : 'v2.9'
+		});
+		FB.AppEvents.logPageView();
+	};
+
+	(function(d, s, id)	{
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
 });

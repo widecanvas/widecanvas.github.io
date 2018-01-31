@@ -2,7 +2,7 @@ var __wpo = {
   "assets": {
     "main": [
       "/images/ajax-loader.c5cd7.gif",
-      "./dist/scripts-97ec6.min.js",
+      "./dist/scripts-e05dd.min.js",
       "./dist/styles-d0072.min.css",
       "./dist/../",
       "./dist/../images/banner1.jpg",
@@ -27,13 +27,13 @@ var __wpo = {
   ],
   "hashesMap": {
     "7a1aa43614396382bb15e5fde574d9cdcd21698f": "/images/ajax-loader.c5cd7.gif",
-    "c5a10717158f8f77c9978333e8580bc7dedb7e43": "./dist/scripts-97ec6.min.js",
+    "68871380350ebce0ac461f7a28ea734eed3fa84d": "./dist/scripts-e05dd.min.js",
     "2659e31a20f49bf60844f1fad89bf9abacf8bd66": "./dist/styles-d0072.min.css",
-    "8cb30fa95e45ab908287b65ad1e58bbaf979c7d4": "./dist/../"
+    "aade4053b7e4e55bddcd40a78ebc36db70e7d204": "./dist/../"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "6/24/2017, 11:20:40 PM",
+  "version": "1/31/2018, 5:06:32 PM",
   "name": "webpack-offline",
   "pluginVersion": "4.8.1",
   "relativePaths": false
