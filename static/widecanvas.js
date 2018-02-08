@@ -120,9 +120,19 @@ $(document).ready(function() {
 	}(document, 'script', 'facebook-jssdk'));
 
 
-	document.getElementById("site_logo").contentWindow.document.body.onclick = 
-		function() {
-		alert("iframe clicked");
+	var scrollEvent = function () {
+		if($(window).scrollTop() > 60) {
+			$('.marquee_code').css('top', '0');
 		}
+		else {
+			$('.marquee_code').css('top', '71px');
+		}
+	};
+
+	$(window).scroll(function() {
+		scrollEvent();
+	});
+
+	scrollEvent();
 
 });

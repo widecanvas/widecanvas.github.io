@@ -31,6 +31,7 @@ body {
 
 .slick-dotted.slick-slider {
     margin-bottom: 0;
+    max-height: 34em;
 }
 
 .sliding_images > button.slick-arrow {
@@ -152,19 +153,28 @@ body {
     background-color: #9a4b81 !important;
 }
 
+.about-us-section {
+    margin-bottom: -20px;
+}
 
-
-.about-us-body  {
+.about-us-wrap  {
     background-image: url('/../images/about-us.jpg');
-    background-repeat: round;
-    color: floralwhite;
-    padding-right: 50%;
-    font-weight: bolder;
     padding-top: 2em;
     padding-bottom: 2em;
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+
+.about-us-body  {
     font-size: large;
-    background-position-x: 0px;
-    text-align: left;
+    color: floralwhite;
+    text-align: center;
+    font-weight: bolder;
+    padding: 2em 5em 2em 5em;
+    background-color: #9491918c;
+    width: 48em;
+    margin: auto;
+    height: 21em;
 }
 
 #toc_page, #initerary_detail_page   {
@@ -193,6 +203,11 @@ body {
     border-color: #DE3116;
     font-style:italic;
     font-weight:bold;
+    position: fixed;
+    opacity: 1;
+    z-index: 1000;
+    top: 71px;
+    opacity: 0.7;
 }
 
 #toc div {
@@ -305,4 +320,11 @@ body {
     width: 8em;
     top: 0;
     cursor: pointer;
+}
+
+.arrow-right {    
+    font-size: 35px;
+    color: #3ed5e4;
+    transform: translateX(-42px) translateY(-13px);
+    position: absolute;
 }
