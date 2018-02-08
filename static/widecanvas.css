@@ -200,17 +200,17 @@ body {
 }
 
 .call_me {
-    color: chartreuse;
-    width: 200px;
+    color: #ffffff;
+    width: 26em;
     position: absolute;
-    top: 10px;
-    background-color: gray;
-    opacity: 0.8;
-    font-size: 110%;
+    top: 382px;
+    background-color: #6e6a546e;
+    font-size: 1.2em;
     font-weight: bolder;
     border-radius: 20px;
-    right: 10px;
+    left: 50%;
     z-index: 200;
+    transform: translateX(-50%);
 }
 
 .sectioned-social-bar   {
@@ -223,10 +223,14 @@ body {
     margin-bottom: -40px;
 }
 
+.top-navigation-bar ul li a {
+    text-transform: uppercase;
+}
+
 .panel-default > .panel-heading {
     color: #ffffff;
-    background-color: #0275d8;
-    border-color: #ddd;
+    background-color: indianred;
+    border: 5px solid #ddd;
 }
 
 .itinerary_dtl_loding {
@@ -244,4 +248,61 @@ body {
 
 .testimonials_panel {
     background-color: #c6e1f9;
+}
+
+.homepage-text {
+    position: absolute;
+    font-size: 3em;
+    top: 100px;
+    z-index: 1000;
+    height: 5em;
+    padding: 1em;
+    display: inline;
+    left: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transform: translateX(-50%);
+    border: 8px solid #949191;
+    background-color: #9491918c;
+    width: unset !important;
+}
+
+.head-container {
+    height: 5em;
+    padding-top: 4px;
+}
+
+.navbar-nav {
+    padding-top: 8px;
+}
+
+.panel-title {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-default {
+    background-color: rgba(0, 0, 0, 0.72);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #f9f8fb;
+    background-color: rgb(0, 160, 176);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffeb3e;
+}
+
+.iframe_action {
+    position: absolute;
+    z-index: 1000;
+    height: 5em;
+    width: 8em;
+    top: 0;
+    cursor: pointer;
 }

@@ -17,6 +17,7 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplaySpeed: 2000
 	});
+	$('.sliding_images').prepend($('.homepage-text'));
 
 	$('.emailContact').click(function() {
 		var name = $('.name').val(),
@@ -96,7 +97,7 @@ $(document).ready(function() {
 			showPosts(tk);
 			$('#site_logo').attr(
 				'src',
-				'https://graph.facebook.com/v2.12/awidecanvas/picture?height=220&amp;access_token=' + tk
+				'https://graph.facebook.com/v2.12/awidecanvas/picture?height=80&width=100&access_token=' + tk
 				);
 		}
 	);	
@@ -117,5 +118,11 @@ $(document).ready(function() {
 		js.src = "//connect.facebook.net/en_US/sdk.js";
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
+
+
+	document.getElementById("site_logo").contentWindow.document.body.onclick = 
+		function() {
+		alert("iframe clicked");
+		}
 
 });

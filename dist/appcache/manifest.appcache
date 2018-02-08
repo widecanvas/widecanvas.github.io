@@ -1,11 +1,11 @@
 CACHE MANIFEST
-#ver:1/31/2018, 8:41:39 PM
+#ver:2/8/2018, 12:42:13 AM
 #plugin:4.8.1
 
 CACHE:
 /images/ajax-loader.c5cd7.gif
-./dist/scripts-9fe6a.min.js
-./dist/styles-d0072.min.css
+./dist/scripts-577be.min.js
+./dist/styles-34c14.min.css
 ./dist/../
 ./dist/../images/banner1.jpg
 ./dist/../images/banner2.jpg

@@ -4,7 +4,7 @@
 
 <head>
     <title>Wide Canvas</title>
-<link href="dist/styles-d0072.min.css" rel="stylesheet"></head>
+<link href="dist/styles-34c14.min.css" rel="stylesheet"></head>
 
 <body>
     <div id="fb-root"></div>
@@ -19,45 +19,54 @@
     }(document, 'script', 'facebook-jssdk'));
     </script>
     <nav class="navbar">
-        <div class="row" style="background-color: aliceblue">
-            <div class="col-md-2">
-                <iframe id="site_logo" src="" height="244" style="
-                    border: none;
-                "></iframe>
-            </div>
-            <div class="col-md-10">
-                <div class="sliding_images">
-                    <img style="height: 250px" src="/../images/banner1.jpg" />
-                    <img style="height: 250px" src="/../images/banner2.jpg" />
-                    <img style="height: 250px" src="/../images/banner3.jpg" />
-                    <img style="height: 250px" src="/../images/banner4.jpg" />
+        <div class="top-navigation-bar row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid head-container">
+                    <div class="col-md-2">
+                        <iframe id="site_logo" src="https://graph.facebook.com/v2.12/awidecanvas/picture?height=80&width=100&access_token=404769543315022|75wKEAFFqhu44vmVnTyFCQnRK3g" height="60" style="
+                        border: none;
+                        padding-top: 2px;
+                        display: inline;"></iframe>
+                        <div class="iframe_action" onclick="window.location.hash='#'"></div>
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="nav navbar-nav menu-nav">
+                            <li class=""><a href="#">Home</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li class="dropdown active">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu projects-dropdown-menu">
+                                    <li><a href="#project1">Project1</a></li>
+                                    <li><a href="#project2">Project2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#itinerary" data-toggle="modal" data-target="#itinerary">Itineraries</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="fb socialI"></div>
+                        <div class="li socialI"></div>
+                        <div class="tw socialI"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row" style="background-color: aliceblue;margin-top: 1.4em;">
+            <div class="col-md-12">
+                <div class="homepage-text">LET YOUR SOUL AND SPIRIT FLY</div>
+                <div class="sliding_images">                    
+                    <img style="height: 500px" src="/../images/banner1.jpg" />
+                    <img style="height: 500px" src="/../images/banner2.jpg" />
+                    <img style="height: 500px" src="/../images/banner3.jpg" />
+                    <img style="height: 500px" src="/../images/banner4.jpg" />
                 </div>
             </div>
             <div class="call_me well well-sm">
-                Call Now<br />
-                +91 8334889991<br />
-                +91 9051288300<br />
+                Call Now: +91 8334889991 / +91 9051288300
+                <br>
             </div>
-        </div>
-
-        <div class="top-navigation-bar row">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <ul class="nav navbar-nav menu-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about-us">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Projects <b class="caret"></b></a>
-                            <ul class="dropdown-menu projects-dropdown-menu">
-                            </ul>
-                        </li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#itinerary" data-toggle="modal" data-target="#itinerary">Itineraries</a></li>
-
-                        <li><a href="#contact-us">Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
         </div>
     </nav>
     <marquee class="marquee_code" direction="left" behavior="scroll" scrollamount="10" ></marquee>
@@ -66,13 +75,13 @@
             <div id="facebookPostLoading">
                 <img src="/../images/ajax-loader.c5cd7.gif" style="margin-top: 4em; margin-left: 40%;">
             </div>
-            <iframe id="facebookPost" src=""  width="100%" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <iframe id="facebookPost" src=""  width="100%" height="316" style="opacity: 0.7; border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
         <div class="blog-nav col-md-4">
-            <iframe src="https://feed.mikle.com/widget/v2/30080/" width="105%" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <iframe src="https://feed.mikle.com/widget/v2/30080/" width="105%" height="270" style="opacity: 0.7; border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
         <div class="youtube-nav col-md-4">
-            <iframe src="https://www.youtube.com/embed/hXdMvVX3ZL4" width="100%" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            <iframe src="https://www.youtube.com/embed/KfIWq_5uAyQ" width="100%" height="270" style="opacity: 0.7; border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         </div>
 
         <div class="testimonials-nav col-md-12">            
@@ -267,6 +276,6 @@
     </div>
     </center>
     <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
-<script type="text/javascript" src="dist/scripts-9fe6a.min.js"></script></body>
+<script type="text/javascript" src="dist/scripts-577be.min.js"></script></body>
 
 </html>
