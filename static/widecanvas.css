@@ -149,7 +149,6 @@ body {
     font-size: larger;
     color: aliceblue;
     vertical-align: super;
-    border-radius: 1.25em;
     background-color: #9a4b81 !important;
 }
 
@@ -161,8 +160,10 @@ body {
     background-image: url('/../images/about-us.jpg');
     padding-top: 2em;
     padding-bottom: 2em;
-    background-size: 100vw;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: 50%;
+    background-color: #1d2120;
 }
 
 .about-us-body  {
